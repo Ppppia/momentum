@@ -1,0 +1,17 @@
+#time-container {
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 43vh;
+}
+
+#date {
+  font-size: 32px;
+}
+#clock {
+  font-size: 62px;
+  font-weight: 700;
+}

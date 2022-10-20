@@ -1,3 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Raleway:wght@400;600;700;800&display=swap");
+@import "reset.css";
+@import "weather.css";
+@import "time.css";
+@import "login.css";
+@import "quotes.css";
+@import "todo.css";
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+#background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
 .hidden {
   display: none;
 }

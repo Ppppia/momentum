@@ -1,0 +1,67 @@
+#login-form,
+#greeting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50vh;
+}
+
+#login {
+  border: none;
+  border-radius: 45px 0 0 45px;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  height: 30px;
+  width: 280px;
+  padding: none;
+  margin-right: 3px;
+}
+
+#login:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.6s;
+}
+
+#login-button {
+  border: none;
+  border-radius: 0 45px 45px 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
+  height: 32px;
+  width: 120px;
+  padding: none;
+  cursor: pointer;
+}
+
+#login-button:hover,
+#logout:hover {
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: ease 0.4s;
+}
+
+#greeting-word,
+#greeting-user {
+  display: inline;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+#greeting-user {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+}
+
+#logout {
+  border: none;
+  padding: 4px 10px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+  padding: none;
+  cursor: pointer;
+  margin-left: 15px;
+}

@@ -1,0 +1,27 @@
+#quote {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  height: 80px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#quote span:first-child {
+  margin: 10px 0;
+  font-size: 14px;
+  font-style: italic;
+}
+
+#quote span:last-child {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+}

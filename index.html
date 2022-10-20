@@ -5,21 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Momentum App</title>
+    <title>Momentum</title>
   </head>
+
   <body>
-    <form class="hidden" id="login-form">
+    <section id="local-info" class="active_localInfo">
+      <div id="weather">
+        <span id="city"></span>
+        <span id="temperature"></span>
+      </div>
+      <div id="time-container">
+        <h2 id="date"></h2>
+        <h2 id="clock">00:00:00</h2>
+      </div>
+    </section>
+
+    <form id="login-form" class="hidden">
       <input
-        required
-        maxlength="15"
+        id="login"
         type="text"
+        maxlength="15"
         placeholder="What is your name?"
+        required
       />
-      <input type="submit" value="Log In" />
+      <input type="submit" id="login-button" value="Login" />
     </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 class="hidden" id="greeting"></h1>
-    <script src="js/greetings.js"></script>
+
+    <form id="greeting-container" class="hidden">
+      <h2 id="greeting-word"></h2>
+      <h1 id="greeting-user"></h1>
+      <button class="hidden" id="logout">Logout</button>
+    </form>
+
+    <div id="quote" class="hidden">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="todo-container" class="hidden">
+      <div class="todo-header">
+        <h3>To Dos</h3>
+        <div>
+          <form id="todo-form">
+            <input
+              id="todo-input"
+              type="text"
+              placeholder="Add your to-dos here :)"
+              required
+            />
+          </form>
+        </div>
+      </div>
+      <div class="todo-content">
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
     <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
